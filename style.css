@@ -1,0 +1,242 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5efe6;
+    color: #3d332b;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 40px;
+    background-color: #4a3b32;
+    color: white;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #e8d5bd;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+#inicio {
+    text-align: center;
+    background-color: white;
+    padding: 60px 30px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    border: 1px solid #dfd1c1;
+}
+
+#inicio h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #4a3b32;
+}
+
+#inicio p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #66584e;
+}
+
+#servicios {
+    margin-bottom: 40px;
+}
+
+#servicios h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #4a3b32;
+}
+
+.productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    width: 30%;
+    min-width: 250px;
+    padding: 30px;
+    border: 1px solid #dfd1c1;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(74, 59, 50, 0.08);
+}
+
+.producto h3 {
+    font-size: 23px;
+    color: #4a3b32;
+}
+
+.producto p {
+    color: #66584e;
+}
+
+.producto button {
+    margin-top: auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #8a6a4f;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.producto button:hover {
+    background-color: #6f543f;
+}
+
+#reserva {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#reserva h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #4a3b32;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #dfd1c1;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(74, 59, 50, 0.08);
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border: 1px solid #cdbca9;
+    border-radius: 7px;
+    background-color: #fffdf9;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid #b99b7d;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #4a3b32;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #6f543f;
+}
+
+#contacto {
+    text-align: center;
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    border: 1px solid #dfd1c1;
+}
+
+#contacto h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #4a3b32;
+}
+
+#contacto p {
+    margin-bottom: 8px;
+    color: #66584e;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #4a3b32;
+    color: white;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #inicio h2 {
+        font-size: 32px;
+    }
+
+    #inicio p {
+        font-size: 18px;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+}
